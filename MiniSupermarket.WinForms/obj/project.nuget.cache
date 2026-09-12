@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "oz878HJftQw=",
+  "success": true,
+  "projectFilePath": "D:\\LTUD\\MiniSupermarket.API\\MiniSupermarket.WinForms\\MiniSupermarket.WinForms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\system.net.http.json\\10.0.12\\system.net.http.json.10.0.12.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Net.Http.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "D:\\LTUD\\MiniSupermarket.API\\MiniSupermarket.WinForms\\MiniSupermarket.WinForms.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\LTUD\\MiniSupermarket.API\\MiniSupermarket.WinForms\\MiniSupermarket.WinForms.csproj",
+      "libraryId": "System.Net.Http.Json",
+      "targetGraphs": [
+        "net10.0-windows7.0"
+      ]
+    }
+  ]
+}

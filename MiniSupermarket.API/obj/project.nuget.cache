@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "NAIc5/q1ujo=",
+  "success": true,
+  "projectFilePath": "D:\\LTUD\\MiniSupermarket.API\\MiniSupermarket.API\\MiniSupermarket.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore\\10.2.3\\swashbuckle.aspnetcore.10.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.2.3\\swashbuckle.aspnetcore.swagger.10.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.2.3\\swashbuckle.aspnetcore.swaggergen.10.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.2.3\\swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.net.http.json\\10.0.12\\system.net.http.json.10.0.12.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Net.Http.Json will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "D:\\LTUD\\MiniSupermarket.API\\MiniSupermarket.API\\MiniSupermarket.API.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\LTUD\\MiniSupermarket.API\\MiniSupermarket.API\\MiniSupermarket.API.csproj",
+      "libraryId": "System.Net.Http.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

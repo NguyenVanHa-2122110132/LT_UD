@@ -1,0 +1,16 @@
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\bin\Debug\net10.0-windows\MiniSupermarket.WinForms.exe
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\bin\Debug\net10.0-windows\MiniSupermarket.WinForms.deps.json
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\bin\Debug\net10.0-windows\MiniSupermarket.WinForms.runtimeconfig.json
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\bin\Debug\net10.0-windows\MiniSupermarket.WinForms.dll
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\bin\Debug\net10.0-windows\MiniSupermarket.WinForms.pdb
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.FormCategoryManagement.resources
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.csproj.GenerateResource.cache
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.GeneratedMSBuildEditorConfig.editorconfig
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.AssemblyInfoInputs.cache
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.AssemblyInfo.cs
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.csproj.CoreCompileInputs.cache
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.dll
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\refint\MiniSupermarket.WinForms.dll
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.pdb
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\MiniSupermarket.WinForms.genruntimeconfig.cache
+D:\LTUD\MiniSupermarket.API\MiniSupermarket.WinForms\obj\Debug\net10.0-windows\ref\MiniSupermarket.WinForms.dll
