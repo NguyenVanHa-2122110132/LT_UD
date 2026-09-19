@@ -1,10 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*
+    -Họ Và Tên: Nguyễn Văn Hà
+    -Lớp: CCQ2211D
+    -Mô Tả: Controller CategoriesController thuộc namespace MiniSupermarket.API.Controllers,
+           quản lý các chức năng CRUD cho danh mục nhóm hàng sử dụng dữ liệu mẫu In-Memory.
+           Cung cấp các API endpoint thực hiện: Lấy toàn bộ danh sách nhóm hàng (GetAll),
+           lấy chi tiết theo ID (GetById), tìm kiếm theo từ khóa qua Query String (Search),
+           thêm mới nhóm hàng (Create), cập nhật thông tin nhóm hàng (Update), 
+           và xóa nhóm hàng theo ID (Delete).
+*/
+using Microsoft.AspNetCore.Mvc;
 using MiniSupermarket.API.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MiniSupermarket.API.Controllers
 {
     [Route("api/[controller]")] // Định tuyến cơ sở: /api/categories
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
 
@@ -88,6 +100,7 @@ namespace MiniSupermarket.API.Controllers
 
         // 6. DELETE: Xóa nhóm hàng theo ID (DELETE /api/categories/{id})
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]//chỉ có admin mới dc xoá
         public IActionResult Delete(int id)
         {
             var cat = _categories.FirstOrDefault(c => c.CategoryId == id);
@@ -98,5 +111,21 @@ namespace MiniSupermarket.API.Controllers
             _categories.Remove(cat);
             return NoContent();
         }
+        // Kiểm tra quyền Admin (Chỉ tài khoản có Role = Admin mới được gọi)
+        [HttpGet("admin-dashboard")]
+        [Authorize(Roles = "Admin")]
+        public IActionResult GetAdminDashboard()
+        {
+            return Ok(new { message = "Chào mừng Admin! Bạn có toàn quyền quản trị hệ thống siêu thị mini." });
+        }
+
+        // Kiểm tra quyền chung cho nhân viên (Cả Admin và Cashier đều gọi được)
+        [HttpGet("staff-pos")]
+        [Authorize(Roles = "Admin,Cashier")]
+        public IActionResult GetStaffPos()
+        {
+            return Ok(new { message = "Màn hình POS Thu ngân sẵn sàng phục vụ bán hàng." });
+        }
     }
+
 }

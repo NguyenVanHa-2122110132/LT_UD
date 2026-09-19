@@ -1,4 +1,15 @@
-﻿namespace MiniSupermarket.API.Models
+﻿/*
+ -Họ Và Tên: Nguyễn Văn Hà
+ -Lớp: CCQ2211D
+ -Mô Tả: Lớp Category thuộc namespace MiniSupermarket.API.Models,
+         dùng để biểu diễn thực thể Nhóm hàng hóa trong hệ thống
+         MiniSupermarket.
+         Lớp lưu trữ mã định danh nhóm hàng (CategoryId), tên nhóm hàng
+         (CategoryName) và mô tả chi tiết nhóm hàng (Description).
+         CategoryName được khởi tạo mặc định bằng chuỗi rỗng và
+         Description có thể nhận giá trị null.
+*/
+namespace MiniSupermarket.API.Models
 {
     // Lớp biểu diễn thực thể Nhóm hàng hóa trong siêu thị mini
     public class Category

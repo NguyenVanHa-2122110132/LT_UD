@@ -1,5 +1,13 @@
+/*
+ -Họ Và Tên: Nguyễn Văn Hà
+-Lớp :CCQ2211D
+-Mô Tả: Form quản lý danh mục Nhóm hàng (CRUD) - kết nối tới Web API 
+        MiniSupermarket.API qua HttpClient để Thêm/Sửa/Xóa/Tìm kiếm 
+        Nhóm hàng và hiển thị danh sách lên DataGridView.
+ */
 using System.Net.Http.Json;
 using System.Windows.Forms;
+using System.Net.Http.Headers;
 
 namespace MiniSupermarket.WinForms
 {
@@ -15,6 +23,8 @@ namespace MiniSupermarket.WinForms
         public FormCategoryManagement()
         {
             InitializeComponent();
+            // Đính kèm Bearer Token vào Header, dùng chung cho mọi lời gọi API bên dưới
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", SessionManager.JwtToken);
         }
 
         // Sự kiện Form vừa bật lên: Tự động tải dữ liệu từ API lên bảng

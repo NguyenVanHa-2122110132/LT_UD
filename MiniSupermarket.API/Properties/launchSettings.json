@@ -1,4 +1,12 @@
-﻿{
+﻿/*
+    -Họ Và Tên: Nguyễn Văn Hà
+    -Lớp: CCQ2211D
+    -Mô Tả: Tệp cấu hình khởi chạy (launchSettings.json) cho ứng dụng dự án,
+           chứa các thiết lập cấu hình profile chạy (http và https), 
+           cổng ứng dụng (applicationUrl), biến môi trường (ASPNETCORE_ENVIRONMENT) 
+           và các thông số gỡ lỗi khi khởi động dự án.
+*/
+{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "profiles": {
     "http": {

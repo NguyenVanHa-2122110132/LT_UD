@@ -1,4 +1,15 @@
-﻿namespace MiniSupermarket.WinForms
+﻿/*
+ -Họ Và Tên: Nguyễn Văn Hà
+ -Lớp: CCQ2211D
+ -Mô Tả: Form giao diện quản lý Nhóm hàng (Category) trong ứng dụng
+         MiniSupermarket.WinForms. Form cung cấp giao diện tìm kiếm,
+         tải lại danh sách nhóm hàng, hiển thị danh sách trên DataGridView
+         và nhập thông tin Nhóm hàng gồm Mã ID, Tên Nhóm hàng và Mô Tả.
+         Hỗ trợ các thao tác Thêm mới, Cập nhật và Xoá thông qua các nút
+         chức năng tương ứng. Đây là file Designer chứa mã khởi tạo và
+         bố trí các thành phần giao diện của FormCategoryManagement.
+*/
+namespace MiniSupermarket.WinForms
 {
     partial class FormCategoryManagement
     {
