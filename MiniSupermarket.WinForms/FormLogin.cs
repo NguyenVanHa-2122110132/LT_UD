@@ -3,8 +3,8 @@
 -Lớp :CCQ2211D
 -Mô Tả: FormLogin - màn hình đăng nhập đầu tiên của ứng dụng WinForms,
         gửi tài khoản/mật khẩu tới API (POST /api/auth/login), nhận
-        về JWT Token và Role, lưu vào SessionManager, sau đó mở Form
-        quản lý danh mục chính (FormCategoryManagement).
+        về JWT Token và Role, lưu vào SessionManager, sau đó mở màn
+        hình Menu chính (FormMain) thay vì mở thẳng một Form quản lý cụ thể.
  */
 
 using System.Net.Http.Json;
@@ -50,10 +50,19 @@ namespace MiniSupermarket.WinForms
 
                     MessageBox.Show($"Đăng nhập thành công với quyền: {SessionManager.CurrentRole}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    FormCategoryManagement mainForm = new FormCategoryManagement();
+                    // Mở màn hình Menu chính thay vì mở thẳng FormCategoryManagement
+                    FormMain mainForm = new FormMain();
                     this.Hide();
                     mainForm.ShowDialog();
-                    this.Close();
+
+                    // Sau khi FormMain đóng lại (do bấm Đăng xuất hoặc đóng cửa sổ),
+                    // hiện lại chính FormLogin này thay vì Close() nó.
+                    // Lưu ý: Program.cs gọi Application.Run(new FormLogin()) nên FormLogin
+                    // là Form chính của ứng dụng - nếu Close() ở đây, toàn bộ app sẽ thoát
+                    // theo, dù người dùng chỉ vừa Đăng xuất chứ không muốn tắt chương trình.
+                    txtUser.Clear();
+                    txtPass.Clear();
+                    this.Show();
                 }
                 else
                 {
